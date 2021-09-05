@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout1.css">
+  <link rel="stylesheet" href="css/article.css">
+  <link rel="stylesheet" href="css/about.css">
+  <!-- load hamburger menu icon -->
+  <script src="https://kit.fontawesome.com/3cc6f8c625.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+  <script src="scripts/scripts.js"></script> 
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <!-- bar appears on small screens -->
+    <div class="small-nav">
+      <!-- scroll to bottom of page for bio -->
+      <a href="#aside" class="small-nav__item">
+        <h3 class="small-nav__name">Will Langhorne</h3>
+      </a>
+      <!-- hamburger menu -->
+      <a href="javascript:void(0);" class="hamburger small-nav__item" onclick="displayNav()">
+        <i class="fa fa-bars fa-lg"></i>
+      </a>
+    </div>
+    <ul class="nav responsive" id="nav__links">
+      <li class="nav-item"><a class="links nav-link" href="index.html">Accountability</a></li>
+      <li class="nav-item"><a class="links nav-link" href="enterprise.html">Enterprise & Features</a></li>
+      <li class="nav-item"><a class="links nav-link" href="outdoors.html">Outdoors</a></li>
+      <li class="nav-item"><a class="links nav-link" href="breaking.html">Breaking News</a></li>
+      <li class="nav-item nav-item--right"><a class="links nav-link" href="resume.html">Resume</a></li>
+    </ul>
+  </header>
+  <div class="article__wrapper">
+    <h2 class="article__title">Teenager missing after plunging into the Kootenai</h2>
+    <div class="article__img-wrapper">
+      <img class="article__img" src="img/falls.jpg">
+    </div>
+    <p class="article__photo-cutline">Officials with the Lincoln County Sheriff's Office said a 17-year-old male was mountain biking along the northern bank of the Kootenai River on July 20 when he went into the water. (Will Langhorne/The Western News)</p>
+    <a class="links pub-link" href="https://thewesternnews.com/news/2021/jul/23/teenager-missing-after-plunging-kootenai/"><h4 class="link-txt">This story originally appeared in The Western News</h4></a>
+    <div class="article__body-wrapper">
+      <div class="article__txt-wrapper">
+        <p>First responders are searching for a possible drowning victim along the Kootenai River after a 17-year-old entered the water near the falls Tuesday.</p>
+        <p>Lincoln County Sheriff Darren Short said he believed the teenager had recently moved to the area with his family. He was mountain biking with his brother along the north bank of the Kootenai River when he fell in. Dispatchers received the initial 911 call at 6:16 p.m.</p>
+        <p>First responders combed the river Tuesday evening using a boat and two jet skis. Pilots with Two Bear Air flew the canyon until dark. The sheriff’s office, David Thompson Search and Rescue, Troy Volunteer Fire Department, Troy Volunteer Ambulance and the Montana Highway Patrol contributed to the search.</p>
+        <p>Efforts continued on Wednesday with additional first responders aiding in the search. Montana Fish, Wildlife and Parks officials helped sweep the river in the afternoon. First responders used drones to check exposed rocks in the river where the victim might have climbed out.</p>
+        <p>Rescue workers will continue patrolling the banks and searching the river at least every morning and evening. </p>
+        <p>Short reminded recreationists to be cautious when around the falls. Steep stretches of shale along the northern bank can be especially treacherous. Swimmers should never approach the falls as strong undercurrents, unseen from the surface, are common in this stretch of the river. </p>
+        <p>“The biggest thing that I can’t stress enough is safety around the falls,” Short said. </p>
+        <p>Troy Mayor Dallas Carr said a lack of caution around the falls has claimed lives in the past. A couple of years ago, a person taking wedding pictures stepped too close to the edge and fell in, Carr said. </p>
+        <p>Carr said he knew of at least one man who had ridden an inner tube into the falls and drowned. The mayor worried that new residents moving into the county might not appreciate the danger the falls can pose. </p>
+        <p>“It’s just a real nasty, treacherous place at the falls if you don’t pay attention,” he said. </p>
+      </div> 
+    </div>
+  </div>
+  <!-- id for aside needed for js -->
+  <aside id="aside">
+    <div class="about-me__wrapper">
+      <h1 class="about-me">About Me</h1>
+    </div>
+    <div class="aside__content">
+      <div class="bio-title__wrapper">
+        <a href="index.html" class="links">
+          <h1 class="bio-title">Will Langhorne</h1>
+        </a>
+      </div>
+      <div class="bio-img__wrapper">
+        <img class="bio-img" src="img/bio.jpg">
+      </div>
+      <div class="txt-social__wrapper">
+        <div class="bio-txt__wrapper">
+          <p class="bio-txt">I'm a journalist based in Libby, Mont. As a general assignment reporter, I cover health care, local government, schools, the outdoors ... and just about every other local news beat. </p>  
+        </div>
+        <div class="social__wrapper">
+          <a href="mailto:whlanghorne@gmail.com">
+            <i class="social fas fa-envelope-square"></i>
+          </a>
+          <a href="tel:850-332-8283">
+            <i class="social fas fa-phone-square-alt"></i>
+          </a>
+          <a href="https://twitter.com/whlanghorne">
+            <i class="social fab fa-twitter-square"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100008205344973">
+            <i class="social fab fa-facebook-square"></i>
+          </a>
+          <i class="social fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <footer>
+    <small>&copy; Copyright <script>getYear()</script>, built from scratch by Will Langhorne</small> 
+  </footer>
+</body>
+</html>

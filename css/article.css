@@ -1,0 +1,105 @@
+/* *
+ * Table of Contents:
+ *
+ * 1.0 - Variables
+ * 2.0 - Basic Structure
+ * 3.0 - Image
+ * 4.0 - Text
+ * 5.0 - Media Queries
+ * -----------------------------------------------------------------------------
+ */
+
+ /**
+ * 1.0 Variables 
+ * -----------------------------------------------------------------------------
+ */
+
+ :root {
+    --COLOR-1: #336699;
+ }
+
+  /**
+ * 2.0 Basic Structure
+ * -----------------------------------------------------------------------------
+ */
+
+ .article__wrapper {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+
+
+
+  /**
+ * 3.0 Image
+ * -----------------------------------------------------------------------------
+ */
+
+.article__img {
+  max-height: auto;
+  max-width: 100%;
+ }
+
+.article__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition-duration: 0.1s;
+  max-height: 350px;
+  max-width: auto;
+  overflow: hidden;
+ }
+
+   /**
+ * 4.0 Text
+ * -----------------------------------------------------------------------------
+ */
+
+ .article__body-wrapper {
+  display: flex;
+  justify-content: center;
+ }
+
+ .pub-link:hover {
+  color: var(--COLOR-1);
+ }
+
+ .article__title {
+  font-size: 3.0em;
+  margin-bottom: 10px;
+ }
+
+ .article__follow-up {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: var(--COLOR-1);
+ }
+
+ .article__txt-wrapper {
+  width: 80%;
+ }
+
+ .article__photo-cutline {
+  margin-top: 6px;
+ }
+
+ .link-txt {
+  font-style: italic;
+  margin-bottom: 20px;
+ }
+
+/**
+ * 5.0 Media Queries
+ * -----------------------------------------------------------------------------
+ */
+
+ @media only screen and (max-width: 768px) {
+
+  .article__wrapper {
+    width: min(700px, 90%); 
+  }
+ }

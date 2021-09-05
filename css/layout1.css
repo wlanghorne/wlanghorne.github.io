@@ -1,0 +1,245 @@
+/* *
+ * Table of Contents:
+ *
+ * 1.0 - Variables
+ * 2.0 - Basic Structure
+ * 3.0 - Head Story
+ * 4.0 - Sidebar Story
+ * 5.0 - Mid Stories
+ * 6.0 - Bottom Stories
+ * 7.0 - Specifics
+ * 8.0 - Media Queries
+ * -----------------------------------------------------------------------------
+ */
+
+ /**
+ * 1.0 Variables
+ * -----------------------------------------------------------------------------
+ */
+
+  :root {
+  --GRID-GAP: 18px;
+  --BORDER-WIDTH1: 10px;
+  --BORDER-WIDTH2: 0.5px;
+  --LINE-WIDTH: 5px;
+
+
+  --COLOR-1: #336699;
+ }
+
+
+/**
+ * 2.0 Basic Structure
+ * -----------------------------------------------------------------------------
+ */
+
+.layout__wrapper {
+  /** place content **/ 
+  display: grid;
+  /* divide up into six columns of equal width */
+  grid-template-columns: repeat(16, 1fr);
+  /* divide up into six rows of equal width */
+  grid-template-rows: repeat(9, 60px);
+  grid-column: 2;
+  grid-row: 2;
+  grid-gap: 15px;
+ }
+
+ .article-links:hover {
+  transform: translateY(-3px); 
+}
+
+.article-links {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition-duration: 0.1s;
+}
+ 
+
+ /* format images in "Top Stories" template */
+ .top-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+ }
+
+ .top {
+  overflow-wrap: break-word;
+  width: 100%;
+  overflow: hidden;
+ }
+
+ .kicker {
+  color: var(--COLOR-1);
+  margin-bottom: 5px;
+ }
+
+/* set title sizes */
+ .sidebar-story__title,
+ .mid-story__title,
+ .mid-story__subtitle {
+  hyphens: auto;
+ }
+
+ .sidebar-story,
+ .mid-story,
+ .bottom-story {
+  border: 0.5px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+ }
+
+
+
+/**
+ * 4.0 Sidebar Story
+ * -----------------------------------------------------------------------------
+ */
+
+ /* container for second article in the "top stories" template */
+ .sidebar-story {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 6;
+  grid-row: span 6;
+ }
+
+ .sidebar-story__title-wrapper {
+  padding-bottom: 20px;
+ }
+
+ .sidebar-story__img-wrapper {
+  height: 100%;
+  width: 100%;
+ }
+
+/**
+ * 5.0 Mid Stories
+ * -----------------------------------------------------------------------------
+ */
+
+ .mid-story {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  grid-column: span 10;
+  grid-row: span 3;
+ }
+
+ .mid-story__img-wrapper {
+  height: 100%;
+  width: 40%;
+ }
+
+ .mid-story2__img-wrapper {
+  height: 100%;
+  width: 50%;
+ }
+
+ .mid-story__title-wrapper {
+  height: 100%;
+  width: 50%;
+  margin-left: var(--GRID-GAP);
+ }
+
+ .mid-story2__title-wrapper {
+  height: 100%;
+  width: 50%;
+  margin-right: var(--GRID-GAP);
+ }
+
+
+/**
+ * 6.0 Bottom Stories
+ * -----------------------------------------------------------------------------
+ */
+
+/* container for third article in the "top stories" template */
+ .bottom-story {
+  display: flex;
+  /** place top article **/
+  grid-column: span 8;
+  grid-row: span 3;
+ }
+
+ .bottom-story__title-wrapper {
+  height: 100%;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.bottom-story__img-wrapper {
+  height: 100%;
+  width: 50%;
+}
+
+/**
+ * 7.0 Specifics 
+ * -----------------------------------------------------------------------------
+ */
+
+
+.trailerpark {
+  font-size: 1.7em;
+ }
+
+.couple,
+.commissioners {
+  font-size: 2em;
+ }
+
+ .teck,
+ .rositas {
+  font-size: 1.9em;
+}
+
+
+.cwd,
+.whitehouse,
+.ballot,
+.election,
+.chainsaw,
+.highlands,
+.trailer-park,
+.reversal,
+.outbreak,
+.vets,
+.timber {
+  font-size: 1.7em;
+ }
+
+.voting {
+  font-size: 1.6em;
+ }
+
+ .falls,
+ .stanley {
+  font-size: 1.5em;
+ }
+
+ /**
+ * 7.0 Specifics 
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 8.0 Media Queries
+ * -----------------------------------------------------------------------------
+ */
+
+ @media only screen and (max-width: 768px) {
+  
+  .layout__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: min(700px, 90%); 
+  }
+
+  .top-img {
+    max-height: 300px;
+  }
+  
+ }
+
