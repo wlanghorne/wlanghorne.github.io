@@ -64,9 +64,10 @@ small {
   display: grid;
   /* columns: spacing, content, aside, spacing */
   grid-template-columns: 1fr min(700px, 70%) 200px 1fr;
-  /* rows: header, content + aside, footer */
-  grid-template-rows: auto auto auto;
+  /* rows: header, content + aside, spacing, footer */
+  grid-template-rows: auto auto auto auto;
   grid-gap: var(--GRID-GAP);
+  min-height: 100%;
  }
 
  img {
@@ -234,7 +235,7 @@ main {
   /** place content **/ 
   /** place footer **/
   grid-column: span 4;
-  grid-row: 3;
+  grid-row: 4;
   border-top: 2px solid black;
   text-align: center;
   padding-top: 20px;
