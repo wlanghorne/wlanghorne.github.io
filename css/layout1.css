@@ -264,7 +264,6 @@
   .whitehouse,
   .ballot,
   .election,
-  .chainsaw,
   .highlands,
   .trailer-park,
   .reversal,
@@ -274,6 +273,7 @@
     font-size: 1.5em;
    }
 
+  .chainsaw,
   .voting {
     font-size: 1.4em;
    }
@@ -282,4 +282,9 @@
    .stanley {
     font-size: 1.3em;
    }
+
+   .mid-story__subtitle,
+   .bottom-story2__subtitle {
+    display: none;
+   } 
  }
