@@ -245,41 +245,8 @@
 
  @media only screen and (max-width: 480px) {
 
-  .trailerpark {
-    font-size: 1.5em;
-   }
-
-  .couple,
-  .commissioners {
-    font-size: 1.8em;
-   }
-
-   .teck,
-   .rositas {
-    font-size: 1.7em;
+  .mid-story__subtitle, 
+  .bottom-story2__subtitle {
+    display: none;
   }
-
-
-  .cwd,
-  .whitehouse,
-  .ballot,
-  .election,
-  .highlands,
-  .trailer-park,
-  .reversal,
-  .outbreak,
-  .vets,
-  .timber {
-    font-size: 1.5em;
-   }
-
-  .chainsaw,
-  .voting {
-    font-size: 1.4em;
-   }
-
-   .falls,
-   .stanley {
-    font-size: 1.3em;
-   }
  }
