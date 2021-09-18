@@ -249,4 +249,18 @@
   .bottom-story2__subtitle {
     display: none;
   }
+
+  .vets,
+  .chainsaw,
+  .ballot,
+  .reversal {
+    font-weight: 1.3em;
+  } 
+
+  .cwd,
+  .erosion,
+  .stanley,
+  .trailerpark {
+    font-size: 1.9em;
+  }
  }
