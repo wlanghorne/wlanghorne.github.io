@@ -211,6 +211,7 @@ main {
 
  .bio-txt__wrapper {
   margin-bottom: 0px;
+  border-bottom: 2px solid black;
  }
 
 .social__wrapper {
