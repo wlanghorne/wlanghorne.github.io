@@ -1,128 +1,124 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/layout1.css">
-  <link rel="stylesheet" href="css/article.css">
-  <link rel="stylesheet" href="css/about.css">
-  <!-- load hamburger menu icon -->
-  <script src="https://kit.fontawesome.com/3cc6f8c625.js" crossorigin="anonymous"></script>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
-  <script src="scripts/scripts.js"></script> 
-  <title>Will Langhorne</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/layout1.css" rel="stylesheet"/>
+<link href="css/article.css" rel="stylesheet"/>
+<link href="css/about.css" rel="stylesheet"/>
+<!-- load hamburger menu icon -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/3cc6f8c625.js"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Abel&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento&amp;display=swap" rel="stylesheet"/>
+<script src="scripts/scripts.js"></script>
+<title>Will Langhorne</title>
 </head>
 <body>
-  <header>
-    <!-- bar appears on small screens -->
-    <div class="small-nav">
-      <!-- scroll to bottom of page for bio -->
-      <a href="#aside" class="small-nav__item">
-        <h3 class="small-nav__name">Will Langhorne</h3>
-      </a>
-      <!-- hamburger menu -->
-      <a href="javascript:void(0);" class="hamburger small-nav__item" onclick="displayNav()">
-        <i class="fa fa-bars fa-lg"></i>
-      </a>
-    </div>
-    <ul class="nav responsive" id="nav__links">
-      <li class="nav-item"><a class="links nav-link" href="index.html">Accountability</a></li>
-      <li class="nav-item"><a class="links nav-link" href="enterprise.html">Enterprise & Features</a></li>
-      <li class="nav-item"><a class="links nav-link" href="outdoors.html">Outdoors</a></li>
-      <li class="nav-item"><a class="links nav-link active" href="breaking.html">Breaking News</a></li>
-      <li class="nav-item nav-item--right"><a class="links nav-link" href="resume.html">Resume</a></li>
-    </ul>
-  </header>
-
-  <div class="layout__wrapper">
-    <a class="links article-links sidebar-story top" href="couple.html">
-      <div class="sidebar-story__title-wrapper">
-        <h5 class="kicker">PLANE CRASH</h5>
-        <h2 class="sidebar-story__title couple" lang="de">Tragedy takes lives of beloved local couple</h2>
-      </div>
-      <div class="sidebar-story__img-wrapper">
-        <img class="top-img" src="img/couple.jpg">
-      </div>
-    </a>
-    <a class="links article-links mid-story top" href="falls.html">
-      <div class="mid-story__img-wrapper">
-        <img class="top-img" src="img/falls.jpg">
-      </div>
-      <div class="mid-story__title-wrapper">
-        <h5 class="kicker">DROWNING</h5>
-        <h2 class="mid-story__title falls" lang="de">Teenager missing after falling into river</h2>
-        <p class="mid-story__subtitle" lang="de">First responders are searching for a possible drowning victim along the Kootenai River</p>
-      </div>
-    </a>
-    <a class="links article-links mid-story top" href="ballot.html">
-      <div class="mid-story2__title-wrapper">
-        <h5 class="kicker">ELECTION DAY</h5>
-        <h2 class="mid-story2__title ballot" lang="de">State reps secure reelection</h2>
-      </div>
-      <div class="mid-story2__img-wrapper">
-        <img class="top-img" src="img/ballot.jpg">
-      </div>
-    </a>
-    <a class="links article-links bottom-story top" href="reversal.html">
-      <div class="bottom-story__img-wrapper">
-        <img class="top-img" src="img/reversal.jpg">
-      </div>
-      <div class="bottom-story__title-wrapper">
-        <h5 class="kicker">VOTING</h5>
-        <h2 class="bottom-story__title reversal" lang="de">County officials reverse election plan</h2>
-      </div>
-    </a>
-    <a class="links article-links bottom-story top" href="outbreak.html">
-      <div class="bottom-story__img-wrapper">
-        <img class="top-img" src="img/outbreak.jpg">
-      </div>
-      <div class="bottom-story__title-wrapper">
-        <h5 class="kicker">COVID-19</h5>
-        <h2 class="bottom-story__title outbreak" lang="de">Outbreak among staff closes school</h2>
-      </div>
-    </a> 
-  </div>
-  <!-- id for aside needed for js -->
-  <aside id="aside">
-    <div class="about-me__wrapper">
-      <h1 class="about-me">About Me</h1>
-    </div>
-    <div class="aside__content">
-      <div class="bio-title__wrapper">
-        <a href="index.html" class="links">
-          <h1 class="bio-title">Will Langhorne</h1>
-        </a>
-      </div>
-      <div class="bio-img__wrapper">
-        <img class="bio-img" src="img/bio.jpg">
-      </div>
-      <div class="txt-social__wrapper">
-        <div class="bio-txt__wrapper">
-          <p class="bio-txt">I'm a journalist based in Libby, Mont. As a general assignment reporter, I cover health care, local government, schools, the outdoors ... and just about every other local news beat. </p>  
-        </div>
-        <div class="social__wrapper">
-          <a href="mailto:whlanghorne@gmail.com">
-            <i class="social fas fa-envelope-square"></i>
-          </a>
-          <a href="tel:850-332-8283">
-            <i class="social fas fa-phone-square-alt"></i>
-          </a>
-          <a href="https://twitter.com/whlanghorne">
-            <i class="social fab fa-twitter-square"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100008205344973">
-            <i class="social fab fa-facebook-square"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </aside>
-  <footer>
-    <small>&copy; Copyright <script>getYear()</script>, built from scratch by Will Langhorne</small> 
-  </footer>
+<header><!-- bar appears on small screens -->
+<div class="small-nav">
+<!-- scroll to bottom of page for bio -->
+<a class="small-nav__item" href="#aside">
+<h3 class="small-nav__name">Will Langhorne</h3>
+</a>
+<!-- hamburger menu -->
+<a class="hamburger small-nav__item" href="javascript:void(0);" onclick="displayNav()">
+<i class="fa fa-bars fa-lg"></i>
+</a>
+</div>
+<ul class="nav responsive" id="nav__links">
+<li class="nav-item"><a class="links nav-link" href="index.html" id="accountability">Accountability</a></li>
+<li class="nav-item"><a class="links nav-link" href="enterprise.html" id="enterprise">Enterprise</a></li>
+<li class="nav-item"><a class="links nav-link" href="features.html" id="features">Features</a></li>
+<li class="nav-item"><a class="links nav-link" href="dataviz.html" id="dataviz">Data Viz</a>
+<li class="nav-item nav-item--right"><a class="links nav-link" href="resume.html" id="resume">Resume</a></li></li>
+</ul></header>
+<div class="layout__wrapper">
+<a class="links article-links sidebar-story top" href="couple.html">
+<div class="sidebar-story__title-wrapper">
+<h5 class="kicker">PLANE CRASH</h5>
+<h2 class="sidebar-story__title couple" lang="de">Tragedy takes lives of beloved local couple</h2>
+</div>
+<div class="sidebar-story__img-wrapper">
+<img class="top-img" src="img/couple.jpg"/>
+</div>
+</a>
+<a class="links article-links mid-story top" href="falls.html">
+<div class="mid-story__img-wrapper">
+<img class="top-img" src="img/falls.jpg"/>
+</div>
+<div class="mid-story__title-wrapper">
+<h5 class="kicker">DROWNING</h5>
+<h2 class="mid-story__title falls" lang="de">Teenager missing after falling into river</h2>
+<p class="mid-story__subtitle" lang="de">First responders are searching for a possible drowning victim along the Kootenai River</p>
+</div>
+</a>
+<a class="links article-links mid-story top" href="ballot.html">
+<div class="mid-story2__title-wrapper">
+<h5 class="kicker">ELECTION DAY</h5>
+<h2 class="mid-story2__title ballot" lang="de">State reps secure reelection</h2>
+</div>
+<div class="mid-story2__img-wrapper">
+<img class="top-img" src="img/ballot.jpg"/>
+</div>
+</a>
+<a class="links article-links bottom-story top" href="reversal.html">
+<div class="bottom-story__img-wrapper">
+<img class="top-img" src="img/reversal.jpg"/>
+</div>
+<div class="bottom-story__title-wrapper">
+<h5 class="kicker">VOTING</h5>
+<h2 class="bottom-story__title reversal" lang="de">County officials reverse election plan</h2>
+</div>
+</a>
+<a class="links article-links bottom-story top" href="outbreak.html">
+<div class="bottom-story__img-wrapper">
+<img class="top-img" src="img/outbreak.jpg"/>
+</div>
+<div class="bottom-story__title-wrapper">
+<h5 class="kicker">COVID-19</h5>
+<h2 class="bottom-story__title outbreak" lang="de">Outbreak among staff closes school</h2>
+</div>
+</a>
+</div>
+<!-- id for aside needed for js -->
+<aside id="aside"><div class="about-me__wrapper">
+<h1 class="about-me">About Me</h1>
+</div>
+<div class="aside__content">
+<div class="bio-title__wrapper">
+<a class="links" href="index.html">
+<h1 class="bio-title">Will Langhorne</h1>
+</a>
+</div>
+<div class="bio-img__wrapper">
+<img class="bio-img" src="img/bio.jpg"/>
+</div>
+<div class="txt-social__wrapper">
+<div class="bio-txt__wrapper">
+<p class="bio-txt">Welcome to my site! I'm a projects reporter at the Arkansas Democrat-Gazette.</p>
+<p class="bio-txt">  Check out a few of my latest clips and stories I wrote while working for The Western News and interning for the Milwaukee Journal Sentinel.</p>
+</div>
+<div class="social__wrapper">
+<a href="mailto:whlanghorne@gmail.com">
+<i class="social fas fa-envelope-square"></i>
+</a>
+<a href="tel:850-332-8283">
+<i class="social fas fa-phone-square-alt"></i>
+</a>
+<a href="https://twitter.com/whlanghorne">
+<i class="social fab fa-twitter-square"></i>
+</a>
+<a href="https://www.facebook.com/profile.php?id=100008205344973">
+<i class="social fab fa-facebook-square"></i>
+</a>
+</div>
+</div>
+</div>
+</aside>
+<footer><small>© Copyright <script>getYear()</script>, built by Will Langhorne</small> </footer>
 </body>
 </html>

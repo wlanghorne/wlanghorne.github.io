@@ -1,0 +1,55 @@
+/* *
+ * Table of Contents:
+ *
+ * 1.0 - Variables
+ * 2.0 - Basic Structure
+ * -----------------------------------------------------------------------------
+ */
+
+ /**
+ * 1.0 Variables
+ * -----------------------------------------------------------------------------
+ */
+
+  :root {
+  --GRID-GAP: 18px;
+  --BORDER-WIDTH1: 10px;
+  --BORDER-WIDTH2: 0.5px;
+  --LINE-WIDTH: 5px;
+
+
+  --COLOR-1: #336699;
+ }
+
+
+/**
+ * 2.0 Basic Structure
+ * -----------------------------------------------------------------------------
+ */
+
+ .layout__wrapper {
+  /** place content **/ 
+  display: flex;
+  flex-flow: column;
+  grid-column: 2;
+  grid-row: 2;
+ }
+
+ .data__wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 16;
+  grid-row: span 15;
+ }
+
+  .data__explainer {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  grid-column: span 16;
+  grid-row: span 2;
+ }
+
+ .data__txt {
+  margin: 0;
+ }

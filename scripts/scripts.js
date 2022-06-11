@@ -13,3 +13,8 @@ function getYear() {
   document.write(new Date().getFullYear());
 }
 
+//set links to active 
+function setToActive(page) {
+  link = document.getElementById(page)
+  link.classList.add("active")
+}
